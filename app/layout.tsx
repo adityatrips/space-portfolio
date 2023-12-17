@@ -8,8 +8,13 @@ import Footer from '@/components/main/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Space Portfolio',
-	description: 'This is my portfolio',
+	title: 'Aditya Tripathi',
+	metadataBase: new URL('https://aditya-tripathi.vercel.app'),
+	description: 'This is my portfolio website.',
+	robots: 'index, follow',
+	applicationName: "Aditya's Portfolio",
+	viewport: { width: "device-width", initialScale: 1 },
+	creator: "Aditya Tripathi",
 };
 
 export default function RootLayout({

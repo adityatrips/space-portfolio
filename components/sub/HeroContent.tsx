@@ -45,12 +45,13 @@ const HeroContent = () => {
 					variants={slideInFromLeft(0.8)}
 					className="text-lg text-gray-400 my-5 max-w-[600px]"
 				>
-					I&apos;m a Fullstack Developer with a passion for building
-					projects. I&apos;m currently a student at the University of
-					New Haven, and I&apos;m looking for a position as a
-					software engineer, and I&apos;m open to any opportunities.
+					I&apos;m a Fullstack Developer who loves to build things that live on
+					the internet. I develop exceptional websites and web apps that provide
+					intuitive, pixel-perfect user interfaces with efficient and modern
+					backends.
 				</motion.p>
 				<motion.a
+					href="#skills"
 					variants={slideInFromLeft(1)}
 					className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
 				>
