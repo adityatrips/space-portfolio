@@ -1,14 +1,15 @@
 import { Socials } from '@/constants';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
 	return (
-		<div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+		<div className="w-screen h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
 			<div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
 				<a
 					href="#about-me"
-					className="h-auto w-auto flex flex-row items-center"
+					className="h-auto w-auto flex-row items-center hidden md:flex"
 				>
 					<Image
 						src="/NavLogo.png"
@@ -46,15 +47,17 @@ const Navbar = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-row gap-5">
+				<div className="flex-row gap-5 hidden md:flex">
 					{Socials.map((social) => (
-						<Image
-							src={social.src}
-							alt={social.name}
-							key={social.name}
-							width={24}
-							height={24}
-						/>
+						<Link href={social.link} target='_blank'>
+							<Image
+								src={social.src}
+								alt={social.name}
+								key={social.name}
+								width={24}
+								height={24}
+							/>
+						</Link>
 					))}
 				</div>
 			</div>

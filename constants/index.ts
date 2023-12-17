@@ -83,14 +83,17 @@ export const Socials = [
 	{
 		name: 'Discord',
 		src: '/instagram.svg',
+		link: 'https://discord.gg/QphQpnCG',
 	},
-	{
-		name: 'Facebook',
-		src: '/facebook.svg',
-	},
+	// {
+	// 	name: 'Facebook',
+	// 	src: '/facebook.svg',
+	// 	link: 
+	// },
 	{
 		name: 'Instagram',
 		src: '/discord.svg',
+		link: 'https://www.instagram.com/i_adityatripathi2412',
 	},
 ];
 
