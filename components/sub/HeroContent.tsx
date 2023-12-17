@@ -3,9 +3,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-	slideInFromTop,
 	slideInFromLeft,
 	slideInFromRight,
+	slideInFromTop,
 } from '@/utils/motion';
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
@@ -15,12 +15,12 @@ const HeroContent = () => {
 		<motion.div
 			initial="hidden"
 			animate="visible"
-			className="flex flex-row items-center justify-center px-20 mt-40 w-full z-20"
+			className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
 		>
 			<div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
 				<motion.div
-					className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
 					variants={slideInFromTop}
+					className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
 				>
 					<SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
 					<h1 className="Welcome-text text-[13px]">
@@ -37,7 +37,7 @@ const HeroContent = () => {
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
 							&nbsp;the best&nbsp;
 						</span>
-						project experience
+						project exprience
 					</span>
 				</motion.div>
 
@@ -45,17 +45,19 @@ const HeroContent = () => {
 					variants={slideInFromLeft(0.8)}
 					className="text-lg text-gray-400 my-5 max-w-[600px]"
 				>
-					I&apos;m a Full Stack Developer with a passion for creating
-					beautiful and functional websites. I&apos;m currently
-					working as a freelancer and I&apos;m available for hire.
+					I&apos;m a Fullstack Developer with a passion for building
+					projects. I&apos;m currently a student at the University of
+					New Haven, and I&apos;m looking for a position as a
+					software engineer, and I&apos;m open to any opportunities.
 				</motion.p>
 				<motion.a
 					variants={slideInFromLeft(1)}
 					className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
 				>
-					Learn more!
+					Learn More!
 				</motion.a>
 			</div>
+
 			<motion.div
 				variants={slideInFromRight(0.8)}
 				className="w-full h-full flex justify-center items-center"

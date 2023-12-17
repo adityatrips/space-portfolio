@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import StarCanvas from '@/components/main/StarBackground';
+import StarsCanvas from '@/components/main/StarBackground';
 import Navbar from '@/components/main/Navbar';
-import Footer from './../components/main/Footer';
+import Footer from '@/components/main/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Space Portfolio',
-	description: 'Portfolio of Aditya Tripathi',
+	description: 'This is my portfolio',
 };
 
 export default function RootLayout({
@@ -20,9 +20,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`bg-[#030014] overflow-y-scroll overflow-x-hidden ${inter.className}`}
+				className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
 			>
-				<StarCanvas />
+				<StarsCanvas />
 				<Navbar />
 				{children}
 				<Footer />
