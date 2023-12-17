@@ -82,17 +82,12 @@ export const Skill_data = [
 export const Socials = [
 	{
 		name: 'Discord',
-		src: '/instagram.svg',
+		src: '/discord.svg',
 		link: 'https://discord.gg/QphQpnCG',
 	},
-	// {
-	// 	name: 'Facebook',
-	// 	src: '/facebook.svg',
-	// 	link: 
-	// },
 	{
 		name: 'Instagram',
-		src: '/discord.svg',
+		src: '/instagram.svg',
 		link: 'https://www.instagram.com/i_adityatripathi2412',
 	},
 ];

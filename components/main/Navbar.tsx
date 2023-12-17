@@ -50,6 +50,7 @@ const Navbar = () => {
 				<div className="flex-row gap-5 hidden md:flex">
 					{Socials.map((social) => (
 						<Link
+						
 							key={social.name}
 							href={social.link}
 							target="_blank"
